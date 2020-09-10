@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tweet character counter</title>
+
+    <script>
+        //Questions
+        var yourName = prompt("What's your name?");
+        var tweet = prompt("Compose yout tweet:");
+
+        //Username capitalize
+        var firstChar = (yourName.slice(0,1)).toUpperCase();
+        var restOfName = (yourName.slice(1,yourName.lenght)).toLowerCase();
+
+        //tweet text 140 characters
+        var tweetCount = tweet.length;
+        var tweetRemain = 140 - tweetCount;
+
+        //until 140 character only
+        var tweetUnder140 = tweet.slice(0,140);
+
+        alert("You " + (firstChar + restOfName) + " have written " + tweetCount + " charactere, you have " + tweetRemain + " characters remaining.");
+        alert("Your twitter is: " + tweetUnder140);
+    </script>
+
+</head>
+<body>
+</body>
+</html>
